@@ -1,0 +1,696 @@
+
+@font-face {
+    font-family: "s_light";
+    src: url(../fuente/SUSE-Light.ttf);
+}
+@font-face {
+    font-family: "s_bold";
+    src: url(../fuente/SUSE-Bold.ttf);
+}
+@font-face {
+    font-family: "s_medium";
+    src: url(../fuente/SUSE-Medium.ttf);
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "s_medium";
+    /* border: solid red 2px; */ 
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+h1{
+background: url(../imagenes/isologotipo.png) no-repeat;
+background-size: contain;
+    width: 378px;
+    height: 59px;
+    padding: 0;
+    font-size: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 15px;
+}
+nav ul li a {
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    padding: 3px;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+nav ul li a:hover{
+    color: rgb(177, 0, 0);
+}
+
+#banner{
+    background: url(../imagenes/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 290px;
+    font-size: 0;
+}
+#about{
+    background: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    color: white;
+    padding: 25px;
+}
+#about p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+#pastillas{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+}
+#abajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.row1 {
+    display: flex;
+    
+}
+
+
+.past_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(238, 238, 238);
+    border-bottom: 8px solid rgb(54, 54, 54);
+    transition: 500ms all cubic-bezier(0.25, 0.46, 0.45, 0.94) ;
+    cursor: pointer;
+}
+.past_info:hover{
+    background-color: rgb(54, 54, 54);
+    color: rgb(238, 238, 238);
+}
+#trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
+    width: 100%;
+    min-height: 500px;
+    padding: 0 30px 30px 30px;
+}
+#trabajos h2{
+padding: 15px 0;
+}
+.trab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+}
+
+.casos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+#marvel{
+    background: url(../imagenes/cliente4.jpg) no-repeat;
+    background-size: contain; 
+    font-size: large;
+    width: 50%;
+    height: 327px;
+}
+#gamer{
+    background: url(../imagenes/gamerflix.png) no-repeat;
+    background-size: contain; 
+    font-size: large;
+    width: 50%;
+    height: 327px;
+}
+#nike{
+    background: url(../imagenes/nike.png) no-repeat;
+    background-size: contain; 
+    font-size: large;
+    width: 50%;
+    height: 327px;
+}
+#evena{
+    background: url(../imagenes/evenem.png) no-repeat;
+    background-size: contain;
+    font-size: large;
+    width: 50%;
+    height: 327px;
+    
+}
+#clientes{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.ult{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    padding: 40px;
+}
+
+.ult h3 { 
+    width: 20%;
+    height: 100px;
+}
+
+.ult p {
+    width: 60%;
+}
+
+footer{
+    min-height: 270px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+footer div ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 70px;
+    list-style: none;
+
+
+}
+footer div ul li a{
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    text-decoration: none;
+}
+#ig{
+    height: 50px;
+    width: 50px;
+}
+#x{
+    height: 50px;
+    width: 50px;
+}
+
+#yt{
+
+    height: 50px;
+    width: 50px;
+}
+
+h3{
+    font-family: "s_bold";
+}
+h3{
+    font-size: x-large;
+}
+h2{
+    font-size: xx-large;
+}
+p{
+    font-size: x-large;
+}
+li{
+
+        font-size: large;
+ 
+}
+
+@media (min-width: 768px )and (max-width:769px){
+    *{
+            padding: 0;
+            margin: 0 ;
+         }
+        header{
+        display: flex;
+        align-items: start;
+        background: url(../imagenes/banner.jpg);
+        min-height: 400px;
+        padding: 15px 15px 15px 90px;
+    }
+
+
+
+        #banner
+        {
+        background-image: url(../imagenes/bannertablet.png);
+        background-size: contain;
+        width: 100%;
+        min-height: 300px;
+                }
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            justify-content: center;
+            gap: 45px;
+            padding: 90px 0 0 0;
+        }
+        
+        nav ul li a {
+            font-size: xx-large;
+            text-decoration: none;
+            color: white;
+            font-size: larger;
+            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        nav ul li a:hover{
+            background-color: rgba(160, 0, 61, 0.808);
+            color: aliceblue;
+        }
+        
+        .trab {
+            width: 768px;
+        }
+
+
+
+        #about p {
+            width: 100%;
+        }
+        #about h2 {
+            display: flex;
+            justify-content: center;
+        }
+        #abajo{
+            display: flex;
+            flex-direction: column;         
+        }
+
+        .row1 {
+            animation-name: past_info;
+            animation-duration: 7s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+
+        @keyframes past_info {
+            from {
+                opacity: 0;
+                scale: 25%; 
+            }
+                to { 
+                    opacity: 1;
+                    scale: 100%;
+                }
+        }
+        
+
+        #pastillas h2{
+            display: flex;
+            justify-content: center;
+        }
+        .past_info p{
+            width: 100%;
+        }
+        .row1{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding-left: 100px;
+        
+        }
+        #trabajos h2{
+            display: flex;
+            justify-content: center;
+        }
+        .trab{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .casos h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .casos p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #marvel{
+            background: url(../imagenes/cliente4.jpg) no-repeat;
+            background-size: contain; 
+            font-size: large;
+            width: 100%;
+            height: 400px;
+        }
+        #gamer{
+            background: url(../imagenes/gamerflix.png) no-repeat;
+            background-size: contain; 
+            font-size: large;
+            width: 100%;
+            height: 400px;
+        }
+        #nike{
+            background: url(../imagenes/nike.png) no-repeat;
+            background-size: contain; 
+            font-size: large;
+            width: 100%;
+            height: 400px;
+        }
+        #evena{
+            background: url(../imagenes/evenem.png) no-repeat;
+            background-size: contain;
+            font-size: large;
+            width: 100%;
+            height: 400px;
+            
+        }
+
+        .ult{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        .ult h3{
+            width: 100%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .ult p{
+            width: 80%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer img{
+            width: 100%; 
+            
+        }
+
+        footer div ul {
+            justify-content: center;
+        }
+
+        footer div ul li {
+            height: 50px;
+            width: 50px;
+        }
+
+        footer h3 {
+                width: 50%;
+                text-align: center;
+        }
+
+        footer h4 {
+            width: 50%;
+            text-align: center;
+        }
+
+    }
+
+
+    
+@media (max-width: 375px ){
+        *{
+            margin: 0;
+            padding: 0;
+         }
+
+
+
+        header{
+        width: 375px;   
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background: url(../imagenes/bannermobile.jpeg);
+        gap: 0;
+        justify-content: start;
+        min-height: 300px;
+        padding: 30px 40px 0 0;        
+    
+    }
+
+
+        #banner
+        {
+        background-image: url(../imagenes/bannertablet.png);
+        background-size: contain;
+        
+        
+        width: 100%;
+        min-height: 150px;
+                }
+        
+
+        h1{
+        background: url(../imagenes/isologo.png) no-repeat;
+        background-size: contain;
+        width: 116px;
+        height: 69px;
+        margin: 10px 0 0 0;
+        font-size: 0;
+
+                    }
+
+        
+        
+
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            justify-content: center;
+            gap: 10px;
+            font-size: 0;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: larger;
+            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-size: 0;
+        }
+
+        
+        #about p {
+            width: 100%;
+            padding:  40px 20px 40px 50px;
+        }
+        #about h2 {
+            display: flex;
+            justify-content: center;
+        }
+        #abajo{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #pastillas h2{
+            display: flex;
+            justify-content: center;
+            padding: 0 0 15px 0;
+        }
+        .past_info p{
+            width: 100%;
+        }
+        .row1{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+
+        }
+
+        .row1 {
+            animation-name: past_info;
+            animation-duration: 7s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        @keyframes past_info {
+            from {
+                opacity: 0;
+                scale: 25%; 
+            }
+                to { 
+                    opacity: 1;
+                    scale: 100%;
+                }
+        }
+
+        #trabajos h2{
+            display: flex;
+            justify-content: center;
+        }
+
+        #clientes .ult h3 {
+            width: 200px;
+            padding: 0;
+        }
+
+        #clientes .ult p {
+            padding: 0;
+        }
+
+        #clientes .ult {
+            padding: 0 0 15px 0;
+        }
+
+        .trab{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 375px;
+        }
+
+        #marvel{
+            background: url(../imagenes/cliente4.jpg) no-repeat;
+            background-size: contain; 
+            font-size: large;
+            width: 100%;
+            height: 195px;
+        }
+        #gamer{
+            background: url(../imagenes/gamerflix.png) no-repeat;
+            background-size: contain; 
+            font-size: large;
+            width: 100%;
+            height: 195px;
+        }
+        #nike{
+            background: url(../imagenes/nike.png) no-repeat;
+            background-size: contain; 
+            font-size: large;
+            width: 100%;
+            height: 195px;
+        }
+        #evena{
+            background: url(../imagenes/evenem.png) no-repeat;
+            background-size: contain;
+            font-size: large;
+            width: 100%;
+            height: 195px;
+            
+        }
+
+        .casos h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .casos p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ult{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        .ult h3{
+            width: 80%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            padding-right: 10px;
+        }
+        .ult p{
+            width: 80%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            padding-right: 30px;
+        }
+        h3{
+            font-family: "s_bold";
+        }
+        h3{
+            font-size: medium;
+        }
+        h2{
+            font-size: medium;
+        }
+        p{
+            font-size: medium;
+        }
+        li{
+        
+                font-size: medium;
+        }
+
+        footer h3
+        {
+            width: 180px;
+        }
+        footer h4
+        {
+            width: 130px;
+        }
+
+        footer {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+    }
+
+
+
+
+
+
